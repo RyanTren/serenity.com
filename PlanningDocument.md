@@ -79,9 +79,10 @@ Write documentation and prepare for project presentation.
 ## Project Team:
 * Project Manager: [Ryan]
 * Frontend Developer: [Ryan]
-* Backend Developer (if applicable): [Ryan]
+* Backend Developer: [Ryan]
 * UI/UX Designer: [Ryan]
 * Quality Assurance Tester: [Ryan]
+
 * Project Risks and Mitigation Strategies:
 * Technical Challenges: Regular code reviews and pair programming sessions to address complex issues.
 * Timeline Delays: Agile project management methodologies to adapt to changing requirements and prioritize tasks effectively.
