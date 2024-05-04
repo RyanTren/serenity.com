@@ -1,13 +1,19 @@
 
 # Software Engineering Planning Document: Web Development Project
+
 ### Project Overview:
+
+
 ### Project Title:
-Music Player with Friends' Favorite Songs Playlist
+
+Serenity - Music Player with Friends' Favorite Songs Playlist
 
 ### Project Description:
+
 Design and develop a music player web application that allows users to create and manage playlists containing their friends' favorite songs. The application will utilize JavaScript and TypeScript for frontend development, with ReactJS/TS for building the user interface.
 
 ### Project Objectives:
+
 Create an intuitive and visually appealing user interface for the music player.
 Implement features to allow users to add, remove, and manage songs in playlists.
 Integrate authentication system to allow users to login and access their playlists.
@@ -18,8 +24,11 @@ Ensure responsiveness and compatibility across various devices and screen sizes.
 Implement robust error handling and validation to enhance user experience.
 Optimize performance and loading times for smooth user interaction.
 Document codebase, including comments and README.md file, for easy understanding and future maintenance.
+
 ### Project Technologies:
+
 ### Frontend Development:
+
 JavaScript and TypeScript
 ReactJS/TS
 HTML5 and CSS3 (for styling)
@@ -62,14 +71,16 @@ Deploy frontend and backend to respective hosting platforms.
 Conduct final testing and debugging.
 Write documentation and prepare for project presentation.
 ### Project Team:
-Project Manager: [Name]
-Frontend Developer: [Name]
-Backend Developer (if applicable): [Name]
-UI/UX Designer: [Name]
-Quality Assurance Tester: [Name]
+Project Manager: [Ryan]
+Frontend Developer: [Ryan]
+Backend Developer (if applicable): [Ryan]
+UI/UX Designer: [Ryan]
+Quality Assurance Tester: [Ryan]
 Project Risks and Mitigation Strategies:
 Technical Challenges: Regular code reviews and pair programming sessions to address complex issues.
 Timeline Delays: Agile project management methodologies to adapt to changing requirements and prioritize tasks effectively.
 Third-party API Dependency: Identify alternative APIs and implement error handling for API failures.
+
 ### Conclusion:
+
 This project aims to enhance your skills in JavaScript, TypeScript, and ReactJS/TS by providing hands-on experience in developing a music player web application. By following the outlined plan and leveraging the specified technologies, you will have the opportunity to create a functional and user-friendly product while gaining valuable insights into web development practices.
