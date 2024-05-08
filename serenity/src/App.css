@@ -6,8 +6,12 @@
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 100px;
+  height: 2.15em;
+  padding: 1em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -35,8 +39,4 @@
 
 .card {
   padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
