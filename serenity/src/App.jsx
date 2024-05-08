@@ -3,6 +3,9 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 import './App.css'
 import './styles/footer.css'
+import './assets/githubFooter.png'
+import './assets/instagramFooter.png'
+import './assets/linkedinFooter.png'
 
 function App() {
   const [count, setCount] = useState(0)
