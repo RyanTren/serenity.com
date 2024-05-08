@@ -38,16 +38,15 @@ body {
   }
 
   .fa-brands {
-    background-color: #d6dfed;
     z-index: 100;
   }
 
   .fa-instagram, .fa-github, .fa-linkedin {
-    background-color: #d6dfed;
     z-index: 100;
   }
   
   .links {
+    color: #d6dfed;
     gap: 10px;
     z-index: 10;
   }
