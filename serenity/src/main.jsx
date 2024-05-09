@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import Footer from './Footer'
 import './styles/footer.css'
 import { Scroll } from './Scroll.jsx'
 import './styles/scroll.css'
@@ -12,9 +11,8 @@ import './styles/scroll.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <>
-      <App />
       <Scroll />
-      <Footer />
+      <App />
     </>
   </React.StrictMode>,
 )
