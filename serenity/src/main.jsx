@@ -2,12 +2,19 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import './assets/githubFooter.png'
-import './assets/instagramFooter.png'
-import './assets/linkedinFooter.png'
+import Footer from './Footer'
+import './styles/footer.css'
+import { Scroll } from './Scroll.jsx'
+import './styles/scroll.css'
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <>
+      <App />
+      <Scroll />
+      <Footer />
+    </>
   </React.StrictMode>,
 )

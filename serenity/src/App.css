@@ -9,9 +9,11 @@
   border: none;
   background-color: rgba(0, 0, 0, 0);
   color: white;
-  font-size: 100px;
-  height: 1px;
-  padding: 1em;
+  font-size: 6em;
+  font-weight: 500;
+  height: 1em;
+  margin: 20px 20px;
+  padding: 20px;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -20,6 +22,12 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbc4);
+}
+
+.tagline {
+  font-size: 1.25em;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.87);
 }
 
 /* @keyframes logo-spin {

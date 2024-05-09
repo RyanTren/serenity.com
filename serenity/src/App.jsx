@@ -1,14 +1,11 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+// import { useState } from 'react'
 import './App.css'
 import './styles/footer.css'
-import './assets/githubFooter.png'
-import './assets/instagramFooter.png'
-import './assets/linkedinFooter.png'
+// import Footer from './Footer';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
@@ -23,12 +20,16 @@ function App() {
       <h1 className="logo">Serenity</h1>
       <p className="tagline">calming the nerves.</p>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        {/* <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+        </button> */}
       </div>
+      
+      {/* <Footer /> */}
     </>
   )
 }
+
+
 
 export default App
