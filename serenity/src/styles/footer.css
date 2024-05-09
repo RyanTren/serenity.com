@@ -9,8 +9,13 @@ body {
   body {
     height: 100%;
   }
+
+  .footer-background{
+    background: #161616;
+  }
   
   .background {
+    background: #161616;
     position: absolute;
     z-index: -1;
     top: 0;
@@ -80,6 +85,7 @@ body {
   }
   
   svg {
+    background: linear-gradient(#161616, #1e152e);
     position: absolute;
     top: 0;
     left: 0;

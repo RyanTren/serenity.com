@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #161616;
+  background: linear-gradient(#161616, #161616);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,7 +15,7 @@
 
 
 html{
-  background-color: #161616;
+  background: linear-gradient(#161616, #161616);
   max-height: 100vh;
   height: 100vh;
 }
@@ -33,7 +33,6 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
   min-height: 100vh;
 }
 

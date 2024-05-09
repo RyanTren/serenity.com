@@ -14,11 +14,11 @@ function App() {
           <p className="tagline">calming the nerves.</p>
         </div>
         
-        <div className='aboutMePage'>
+        <div className='musicPage'>
           <h2>music page</h2>
         </div>
 
-        <div className='musicPage'>
+        <div className='aboutMePage'>
           <h2>about me page</h2>
         </div>
             
