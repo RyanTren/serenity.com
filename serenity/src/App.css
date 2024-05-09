@@ -7,6 +7,10 @@ body {
 
 }
 
+html{
+  height: 100vh;
+}
+
 #root {
   max-width: 1280px;
   height: 100vh;
@@ -16,9 +20,13 @@ body {
 }
 
 .homePage, .aboutMePage, .musicPage, .footPage {
-  width: 100vh;
+  width: 100%;
   height: 100vh; /* Set each slide to occupy the full viewport height */
   overflow-y: auto; /* Allow vertical scrolling if content overflows */
+}
+
+.aboutMePage, .musicPage, .footPage {
+  background-color: #161616;
 }
 
 .logo {
