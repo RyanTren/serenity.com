@@ -7,6 +7,8 @@ body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
+
+
 /* html{
   height: 100vh;
 } */
@@ -58,6 +60,34 @@ body {
   font-size: 1.25em;
   font-weight: 300;
   margin-bottom: 100%;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+
+hr, .lineSeperator { 
+  width: 45%; 
+  height:1px; 
+  margin-top: 5%;
+  background: #fff 
+}
+
+.aboutMePfp{
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.lineSeperator:after { 
+  width:45%; 
+  height:1px; 
+  background: #fff; 
+  content:"" 
+}
+
+.aboutMeText{
+  font-size: 1.25em;
+  font-weight: 300;
+  width: 45%;
   color: rgba(255, 255, 255, 0.87);
 }
 
