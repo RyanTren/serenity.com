@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import './App.css'
+import './styles/App.css'
 import './styles/footer.css'
 import Footer from './Footer'
 import pfp from './assets/pfp.jpg';
