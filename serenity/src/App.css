@@ -4,6 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #d6dfed;
   height: 100vh;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 /* html{
