@@ -75,6 +75,12 @@ hr, .lineSeperator {
   border-radius: 50%;
   width: 300px;
   height: 300px;
+  box-shadow: 0 0 10em #646cff30;
+}
+
+.aboutMePfp:hover{
+  scale: 1.05;
+  transition: 0.6s;
 }
 
 .lineSeperator:after { 

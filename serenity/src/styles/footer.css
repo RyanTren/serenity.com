@@ -65,6 +65,10 @@ body {
     font-size: 24px;
     z-index: 1;
   }
+
+  .fa-brands:hover {
+    box-shadow: #0a0d49d2;
+  }
   
   
   .links {
