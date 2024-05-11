@@ -19,7 +19,6 @@ function App() {
         </div>
         
         <div className='musicPage'>
-          <h2>music page</h2>
           <Music />
         </div>
 
