@@ -19,7 +19,7 @@ export const Scroll = () => {
 
     return (
         <>
-                <progress max="100" value="0"></progress>
+            <progress max="100" value="0"></progress>
         </>
     );
 };

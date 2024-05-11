@@ -2,6 +2,7 @@
 import './styles/App.css'
 import './styles/footer.css'
 import Footer from './Footer'
+import Music from './Music';
 import pfp from './assets/pfp.jpg';
 
 
@@ -19,13 +20,14 @@ function App() {
         
         <div className='musicPage'>
           <h2>music page</h2>
+          <Music />
         </div>
 
         <div className='aboutMePage'>
-          <h2>about me page</h2>
+          <h2>about the creator</h2>
           <img className='aboutMePfp' src={ pfp }></img>
           <hr className='lineSeperator'></hr>
-          <p className='aboutMeText'>Ryan Tran is a Computer Science Student learning Front-end Development on the side. Listening to music takes him away from all the stress. Maybe his music will calm your nerves.</p>
+          <p className='aboutMeText'>Ryan Tran is a Computer Science Student concentrating in Artifical Intelligence. Listening to music get us all in the zone: getting pumped for a workout, preparing for a 8 hour study session, and just vibing out in your bedroom. This passion project is a way for him to show others his music taste and develop skills in Front-End Development!</p>
         </div>
             
         <div className='footerPage'>
