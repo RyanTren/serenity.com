@@ -80,6 +80,10 @@ body {
   .links li, a{
     z-index: 1;
   }
+
+  .link-colors{
+    color: rgba(255, 255, 255, 0.366);
+  }
   
   .footer-legal {
     font-size: 12px;

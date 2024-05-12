@@ -78,10 +78,10 @@ export function Footer() {
           <li><a className="fa-brands fa-linkedin" href="https://www.linkedin.com/in/ryantren/"><img src={linkedinFooter}/></a></li>
         </ul>
         <ul className="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="https://www.linkedin.com/in/ryantren/">About</a></li>
-          <li><a href="https://ryantren.github.io/protfolio-website/">Portfolio</a></li>
-          <li><a href="https://www.linkedin.com/in/ryantren/">Hire</a></li>
+          <li><a className="link-colors" href="index.html">Home</a></li>
+          <li><a className="link-colors" href="https://www.linkedin.com/in/ryantren/">About</a></li>
+          <li><a className="link-colors" href="https://ryantren.github.io/protfolio-website/">Portfolio</a></li>
+          <li><a className="link-colors" href="https://www.linkedin.com/in/ryantren/">Hire</a></li>
         </ul>
         <p className="footer-legal">Ryan Tran © 2024 All Rights Reserved</p>
       </section>
