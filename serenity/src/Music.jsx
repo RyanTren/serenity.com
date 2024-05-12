@@ -6,8 +6,8 @@ function Music(){
 
     return(
         <div>
-            <h2>Vibe With Me</h2>
-            <p>House music, born in Chicago in the 1980s, blends disco, funk, and electronic elements, creating pulsating beats and soulful vocals that energize dance floors worldwide. Shoegaze, emerging in the UK in the late 1980s, envelops listeners in dreamy, ethereal soundscapes with distorted guitars and hazy vocals, inviting them into a mesmerizing sonic reverie. Chill R&B combines smooth melodies, laid-back rhythms, and soulful vocals, crafting a soothing atmosphere perfect for relaxation and introspection. Each genre offers a unique sonic journey, captivating audiences with its distinct style and emotive power.</p>
+            <h2>Discover Me</h2>
+            <p>Discover 300 Songs from my 3 curated playlist of wonderful vocals and instrumentals. One to party, one to feel, and one to relax. Enjoy the show.</p>
             <section>
                 <ul>
                     <card className="card-cover">
