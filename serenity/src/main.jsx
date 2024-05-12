@@ -11,8 +11,8 @@ import './styles/scroll.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <>
-      <Scroll />
       <App />
+      <Scroll />
     </>
   </React.StrictMode>,
 )
