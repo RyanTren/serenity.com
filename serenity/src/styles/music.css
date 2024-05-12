@@ -3,13 +3,16 @@
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    padding: 20vh 6vw;
+    height: 40vh;
+    width: 26vw;
+    /* padding: 20vh 6vw; */
     margin: 1em;
 
 }
 
 .card-cover:hover{
-    box-shadow: 0 0 1em 5px rgba(191, 70, 239, 0.199);
+    /* scale: 0.95; */
+    box-shadow: 0 0 1px 5px rgba(191, 70, 239, 0.426);
     transition: box-shadow 0.5s;
     cursor: pointer;
 }
