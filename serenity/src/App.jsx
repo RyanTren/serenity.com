@@ -20,7 +20,7 @@ function App() {
         
         <div className='musicPage'>
           <Music />
-          <button>Play Different Songs</button>
+          <button href="">Play Different Songs</button>
         </div>
 
         <div className='aboutMePage'>
