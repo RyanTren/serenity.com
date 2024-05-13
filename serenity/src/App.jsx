@@ -6,7 +6,6 @@ import Music from './Music';
 import pfp from './assets/pfp.jpg';
 // import globe from './assets/globe.gif';
 
-
 function App() {
   // const [count, setCount] = useState(0)
 

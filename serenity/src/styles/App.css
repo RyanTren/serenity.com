@@ -184,6 +184,19 @@ hr, .lineSeperator {
   }
 } */
 
+@media (max-width: 600px) { /* Media query for screens smaller than 600px */
+  #root {
+    padding: 1rem;
+    padding: 1vh;
+  }
+
+  .logo {
+    font-size: 8vw;
+    font-size: 8vh;
+  }
+}
+
 .card {
   padding: 2em;
+  padding: 2vh;
 }
