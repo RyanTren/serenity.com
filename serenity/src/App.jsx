@@ -4,6 +4,7 @@ import './styles/footer.css'
 import Footer from './Footer'
 import Music from './Music';
 import pfp from './assets/pfp.jpg';
+import globe from './assets/globe.gif';
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
     <>
         <div className='homePage'>
           <div className="logoContainer">
-            <h1 className="logo">Serenity</h1>
+            <h1 className="logo">Serenity  </h1>
+            {/* <img className="globe-gif" src={ globe }/> */}
             <p className="tagline">calming the nerves.</p>
           </div>
         </div>
