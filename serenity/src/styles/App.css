@@ -37,7 +37,7 @@ body {
   justify-content: center;
 }
 
-.logo {
+/* .logo {
   border: none;
   background-color: rgba(0, 0, 0, 0);
   color: white;
@@ -48,12 +48,36 @@ body {
   padding: 20px;
   will-change: filter;
   transition: filter 300ms;
+
+ 
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffd2);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbc4);
+} */
+
+.logo {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 7em;
+  font-weight: 500;
+  height: 1em;
+  margin-top: 100%;
+  padding: 20px;
+  text-shadow: 0.1em 0.1em 50px #00aaf8;
+  animation: flashingGlow 1.5s ease-in-out infinite alternate; /* Apply flashing glow animation */
+}
+
+@keyframes flashingGlow {
+  0% {
+    text-shadow: 0 0 1em #00ffdd, 0 0 2em #0019f8, 0 0 3em #9900ff; /* Start with glow */
+  }
+  150% {
+    text-shadow: none; /* End with no glow */
+  }
 }
 
 .tagline {
