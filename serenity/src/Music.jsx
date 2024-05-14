@@ -6,7 +6,7 @@ function Music(){
 
     return(
         <div>
-            <h2>Discover Me</h2>
+            <h2>Discover Music</h2>
             <p>Discover 300 Songs from my 3 curated playlist of wonderful vocals and instrumentals. One to party, one to feel, and one to relax. Enjoy the show.</p>
             <section>
                 <ul>
@@ -56,6 +56,10 @@ function Music(){
                     </card>
                 </ul>
             </section>
+
+            <div className="button-navigation">
+                <button href="">Play Different Songs</button>
+            </div>
         </div>
     );
 }

@@ -13,6 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <>
       <App />
       <Scroll />
+      
     </>
   </React.StrictMode>,
 )

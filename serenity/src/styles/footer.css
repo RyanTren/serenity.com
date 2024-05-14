@@ -93,7 +93,7 @@ body {
   }
   
   svg {
-    background: linear-gradient(#161616, #1e152e);
+    background: linear-gradient(#16161600, #1e152e);
     position: absolute;
     top: 0;
     left: 0;
@@ -102,7 +102,9 @@ body {
     transform: scaleY(3) scaleX(8);
     transform-origin: bottom;
     box-sizing: border-box;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     pointer-events: none;
     z-index: -1;
   }
@@ -137,3 +139,27 @@ body {
       gap: 20px;
     }
   }
+
+  /* Media query for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px; /* Add padding to footer */
+  }
+
+  .socials, .links {
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center items horizontally */
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 420px) {
+  .socials, .links {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .socials li, .links li {
+    margin: 10px 0; /* Adjust margin for stacked items */
+  }
+}
