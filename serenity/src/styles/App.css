@@ -32,6 +32,11 @@ body {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
   border: none;
   background-color: transparent;
   color: white;
@@ -54,6 +59,10 @@ body {
 }
 
 .tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   font-size: 1.25em;
   font-weight: 300;
   margin-bottom: 100%;
@@ -112,15 +121,37 @@ hr, .lineSeperator {
   }
 } */
 
-@media (max-width: 600px) { /* Media query for screens smaller than 600px */
-  #root {
-    padding: 1rem;
-    padding: 1vh;
+/*Screen sizes: 600, 601, 768, 992, 1220, */
+
+@media (min-width: 600px) { /* Media query for screens smaller than 600px */
+  .responsive{
+    width: 100%;
+  }
+}
+
+@media (max-width: 601px) { /* Media query for screens smaller than 600px */
+  .responsive{
+    width: 100%;
   }
 
-  .logo {
-    font-size: 8vw;
-    font-size: 8vh;
+
+}
+
+@media (min-width: 768px) { /* Media query for screens smaller than 600px */
+  .responsive{
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) { /* Media query for screens smaller than 600px */
+  .responsive{
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) { /* Media query for screens smaller than 600px */
+  .responsive{
+    width: 100%;
   }
 }
 
