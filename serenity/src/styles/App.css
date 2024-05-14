@@ -7,6 +7,12 @@ body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
+
+
+/* html{
+  height: 100vh;
+} */
+
 #root {
   box-sizing: border-box;
   max-width: 1280px;
@@ -31,33 +37,116 @@ body {
   justify-content: center;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+=======
+/* .logo {
+>>>>>>> parent of 0e30bf4 (refractoring and whatnot)
+=======
+/* .logo {
+>>>>>>> parent of 0e30bf4 (refractoring and whatnot)
   border: none;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   color: white;
   font-size: 7em;
   font-weight: 500;
   height: 1em;
   margin-top: 100%;
   padding: 20px;
-  animation: flashingGlow 1s ease-in-out infinite alternate;
-}
+  will-change: filter;
+  transition: filter 300ms;
 
+ 
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffd2);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbc4);
+} */
+
+.logo {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 7em;
+  font-weight: 500;
+  height: 1em;
+  margin-top: 100%;
+  padding: 20px;
+  text-shadow: 0.1em 0.1em 50px #00aaf8;
+  animation: flashingGlow 1.5s ease-in-out infinite alternate; /* Apply flashing glow animation */
+}
 
 @keyframes flashingGlow {
   0% {
     text-shadow: 0 0 1em #00ffdd, 0 0 2em #0019f8, 0 0 3em #9900ff; /* Start with glow */
   }
-  100% {
-    text-shadow: 0 0 1em #0077ff; /* End with no glow */
+  150% {
+    text-shadow: none; /* End with no glow */
   }
 }
 
+/* 
+.globe-gif {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  background-color: transparent; 
+}
+*/
+
+
+
 .tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   font-size: 1.25em;
   font-weight: 300;
   margin-bottom: 100%;
   color: rgba(255, 255, 255, 0.87);
+}
+
+button{
+  position: relative;
+}
+
+button:hover::before{
+  animation: shine 2s ease-out 0.15s infinite;
+}
+
+button::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100vw;
+  opacity: 0.5;
+}
+
+@keyframes shine{
+  0% { left: -75px; }
+  60% { left: 60px; }
+  to { left: 61px; }
 }
 
 
@@ -112,15 +201,37 @@ hr, .lineSeperator {
   }
 } */
 
-@media (max-width: 600px) { /* Media query for screens smaller than 600px */
-  #root {
-    padding: 1rem;
-    padding: 1vh;
+/*Screen sizes: 600, 601, 768, 992, 1220, */
+
+@media (min-width: 600px) { /* Media query for screens smaller than 600px */
+  .responsive{
+    width: 100%;
+  }
+}
+
+@media (max-width: 601px) { /* Media query for screens smaller than 600px */
+  .responsive{
+    width: 100%;
   }
 
-  .logo {
-    font-size: 8vw;
-    font-size: 8vh;
+
+}
+
+@media (min-width: 768px) { /* Media query for screens smaller than 600px */
+  .responsive{
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) { /* Media query for screens smaller than 600px */
+  .responsive{
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) { /* Media query for screens smaller than 600px */
+  .responsive{
+    width: 100%;
   }
 }
 
