@@ -167,25 +167,31 @@ hr, .lineSeperator {
 /* Media query for large screens */
 @media (min-width: 1200px) {
 /* Adjustments for large screens can go here */
-svg{
-  transform: scaleY(2) scaleX(6);
-}
+  .aboutMeText{
+    font-size: 1.25em;
+    font-weight: 300;
+    width: 25vw;
+  }
 }
 
 /* Media query for smaller screens */
 @media (max-width: 1199px) {
 /* Adjustments for smaller screens can go here */
-svg{
-  transform: scaleY(2) scaleX(4);
-}
+  .aboutMeText{
+    font-size: 1em;
+    font-weight: 300;
+    width: 25vw;
+  }
 }
 
 /* Media query for tablets and smaller screens */
 @media (max-width: 768px) {
 /* Adjustments for tablets and smaller screens can go here */
-svg{
-  transform: scaleY(5) scaleX(4);
-}
+  .aboutMeText{
+    font-size: 0.9em;
+    font-weight: 300;
+    width: 25vw;
+  }
 }
 
 /* Media query for Surface Duo screens */
@@ -196,9 +202,7 @@ svg{
       font-weight: 300;
       width: 25vw;
     }
-  }
-  
-
+}  
 
 /* Media query for mobile screens */
 @media (max-width: 430px) {
