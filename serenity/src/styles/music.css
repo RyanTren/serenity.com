@@ -1,14 +1,26 @@
-.card-cover{
-    border: none;
-    border-radius: 10px;
-    height: 40vh;
-    width: 26vw;
+.playlist-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 1em;
 
 }
 
+.card-cover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+    border: none;
+    border-radius: 10px;
+    height: 100%;
+    width: 15vw;
+    margin: 1em;
+}
+
 .card-cover:hover{
-    /* scale: 0.95 ; */
     box-shadow: 0 0 1em 0.5em rgba(191, 70, 239, 0.116);
     transition: box-shadow .65s;
     cursor: pointer;
@@ -21,6 +33,7 @@ iframe{
 
 .button-navigation{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
@@ -28,6 +41,7 @@ iframe{
   button{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-self: center;
   }

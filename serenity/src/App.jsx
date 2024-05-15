@@ -28,10 +28,12 @@ function App() {
           <hr className='lineSeperator'></hr>
           <p className='aboutMeText'>Ryan Tran is a Computer Science Student concentrating in Artifical Intelligence. Listening to music get us all in the zone: getting pumped for a workout, preparing for a 8 hour study session, or just vibing out in your bedroom. This passion project is a way for him to show others his music taste and develop skills in Front-End Development!</p>
         </div>
+
+        <Footer />
             
-        <div className='footerPage'>
+        {/* <div className='footerPage'>
           <Footer />
-        </div>     
+        </div>      */}
     </div>
   )
 }

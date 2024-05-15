@@ -12,13 +12,14 @@ body {
   max-width: 1280px;
   height: 100vh;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
 .homePage, .aboutMePage, .musicPage, .footPage {
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   flex-direction: column; /* Add this line */
@@ -26,6 +27,7 @@ body {
 
 .logoContainer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
