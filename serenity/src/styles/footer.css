@@ -11,11 +11,12 @@ body {
   }
 
   .footer-background{
-    background: #161616;
+    background: #16161600;
+    bottom: 0;
   }
   
   .background {
-    background: #161616;
+    background: #16161600;
     position: absolute;
     z-index: -1;
     top: 0;
@@ -26,7 +27,10 @@ body {
   
   ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+
     list-style: none;
     padding: 0;
     margin: 0;
@@ -34,6 +38,11 @@ body {
   }
   
   .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
     gap: 20px;
     z-index: 1;
   }
@@ -66,12 +75,7 @@ body {
   .fa-brands {
     font-size: 24px;
     z-index: 1;
-  }
-
-  .fa-brands:hover {
-    box-shadow: #0a0d49d2;
-  }
-  
+  }  
   
   .links {
     color: #d6dfed;
@@ -96,18 +100,21 @@ body {
   
   svg {
     background: linear-gradient(#16161600, #1e152e);
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
+    bottom: 0%;
     width: 100%;
     height: 100%;
     transform: scaleY(3) scaleX(8);
     transform-origin: bottom;
     box-sizing: border-box;
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
     pointer-events: none;
     z-index: -1;
   }
@@ -116,10 +123,11 @@ body {
     position: relative;
     left: 0;
     bottom: 0;
+
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 370px;
+    height: 35%;
   }
   
   section {
@@ -145,26 +153,42 @@ body {
     }
   }
 
-  /* Media query for smaller screens */
-@media (max-width: 768px) {
-  .footer {
-    padding: 20px; /* Add padding to footer */
-  }
-
-  .socials, .links {
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: center; /* Center items horizontally */
+/* Media query for large screens */
+@media (min-width: 1280px) {
+  /* Adjustments for large screens can go here */
+  svg{
+    transform: scaleY(4) scaleX(5);
   }
 }
 
-/* Media query for even smaller screens */
-@media (max-width: 420px) {
-  .socials, .links {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center; /* Center items horizontally */
+/* Media query for smaller screens */
+@media (max-width: 1024px) {
+  /* Adjustments for smaller screens can go here */
+  svg{
+    transform: scaleY(5) scaleX(4);
   }
+}
 
-  .socials li, .links li {
-    margin: 10px 0; /* Adjust margin for stacked items */
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  /* Adjustments for tablets and smaller screens can go here */
+  svg{
+    transform: scaleY(5) scaleX(4);
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 430px) {
+  /* Adjustments for mobile screens can go here */
+  svg{
+    transform: scaleY(3) scaleX(3.5);
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 375px) {
+  /* Adjustments for mobile screens can go here */
+  svg{
+    transform: scaleY(4) scaleX(3);
   }
 }

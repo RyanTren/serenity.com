@@ -7,8 +7,8 @@ import linkedinFooter from './assets/linkedinFooter.png';
 
 export function Footer() {
   return (
-    <footer>
-      <div className="footer-background">
+    <footer className="footer-background">
+      <div className="background">
         <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,6 @@ export function Footer() {
           <li><a className="link-colors" href="index.html">Home</a></li>
           <li><a className="link-colors" href="https://www.linkedin.com/in/ryantren/">About</a></li>
           <li><a className="link-colors" href="https://ryantren.github.io/protfolio-website/">Portfolio</a></li>
-          <li><a className="link-colors" href="https://www.linkedin.com/in/ryantren/">Hire</a></li>
         </ul>
         <p className="footer-legal">Ryan Tran © 2024 All Rights Reserved</p>
       </section>

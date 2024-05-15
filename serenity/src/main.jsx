@@ -5,6 +5,7 @@ import './styles/index.css'
 import './styles/footer.css'
 import { Scroll } from './Scroll.jsx'
 import './styles/scroll.css'
+import Footer from './Footer.jsx';
 
 
 
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <>
       <App />
       <Scroll />
+      <Footer />
     </>
   </React.StrictMode>,
 )
