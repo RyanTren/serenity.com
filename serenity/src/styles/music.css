@@ -46,7 +46,7 @@ button {
   align-self: center;
 
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: none;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -54,6 +54,7 @@ button {
   background-color: #7734db;
   color: #fff;
   cursor: pointer;
+
   transition: border-color 0.25s;
 }
 
@@ -86,7 +87,7 @@ button:focus-visible {
 }
 
 button:hover::before{
-  animation: shine 1.75s ease-in-out infinite;
+  animation: shine 2s ease-in-out infinite;
 }
 
 button::before{
