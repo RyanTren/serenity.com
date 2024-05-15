@@ -1,3 +1,4 @@
+import Footer from './Footer';
 import './styles/music.css';
 
 function Music(){
@@ -58,7 +59,7 @@ function Music(){
             </section>
 
             <div className="button-navigation">
-                <button href="">Play Different Songs</button>
+                <button href={<Footer />}>Play Different Songs</button>
             </div>
         </div>
     );
