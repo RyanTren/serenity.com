@@ -32,55 +32,95 @@ iframe{
 }
 
 .button-navigation{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #7734db;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border: none;
+  box-shadow: inset 0px 0px 1em #3d0f82a5;
+  filter: drop-shadow(0 0 1em black);
+  
+}
+
+button:focus,
+button:focus-visible {
+  border: none;
+  background-color: #6d23dc;
+  box-shadow: inset 0px 0px 10px #010002a5;
+  transition: 0.5s;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #213547;
+    background-color: #7734db3e;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #7734db;
+  }
+}
+
+button:hover::before{
+  animation: shine 1.75s ease-in-out infinite;
+}
+
+button::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+    
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.531),
+    rgba(255, 255, 255, 0) 65%
+  );
+  top: 0;
+  left: -100vw;
+  opacity: 0.5;
+}
+
+@keyframes shine{
+  0% { left: -75px;}
+  60% { left: 60px; }
+  to { left: 61px; }
+}
+
+@media (width > 420px) {
+  section {
     align-items: center;
-  }
-  
-  button{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-self: center;
-  }
-  
-  button:hover::before{
-    animation: shine 1.75s ease-in-out infinite;
-  }
-  
-  button::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-      
-    background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0) 40%,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0) 70%
-    );
-    top: 0;
-    left: -100vw;
-    opacity: 0.5;
-  }
-  
-  @keyframes shine{
-    0% { left: -75px; }
-    60% { left: 60px; }
-    to { left: 61px; }
+    padding-left: 0;
+    gap: 20px;
   }
 
-  @media (width > 420px) {
-    section {
-      align-items: center;
-      padding-left: 0;
-      gap: 20px;
-    }
-  
-    .links {
-      gap: 20px;
-    }
+  .links {
+    gap: 20px;
   }
+}
