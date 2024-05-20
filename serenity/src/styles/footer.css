@@ -106,7 +106,7 @@ body {
     bottom: 0%;
     width: 100%;
     height: 100%;
-    transform: scaleY(3) scaleX(8);
+    transform: scaleY(3) scaleX(10);
     transform-origin: bottom;
     box-sizing: border-box;
 

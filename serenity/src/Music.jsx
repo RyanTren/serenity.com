@@ -1,4 +1,3 @@
-import Footer from './Footer';
 import './styles/music.css';
 
 function Music(){
@@ -57,10 +56,6 @@ function Music(){
                     </card>
                 </ul>
             </section>
-
-            <div className="button-navigation">
-                <button href={<Footer />}>Play Different Songs</button>
-            </div>
         </div>
     );
 }
