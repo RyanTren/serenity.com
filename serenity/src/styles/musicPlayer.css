@@ -1,0 +1,23 @@
+*, body, html{
+    background-color: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+}
+
+.music-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0%;
+    width: 100vw;
+
+    background-color: rgba(84, 10, 168, 0.37);
+}
+
+song-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(84, 10, 168, 0.37);
+}
+

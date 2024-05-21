@@ -5,6 +5,7 @@ import MusicPlayer from './MusicPlayer'; // Ensure this matches the filename exa
 import pfp from './assets/pfp.jpg';
 import './styles/App.css';
 import './styles/footer.css';
+import './styles/musicPlayer.css';
 
 function Home() {
   const navigate = useNavigate(); // Use useNavigate hook
