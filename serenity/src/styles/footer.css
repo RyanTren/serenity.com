@@ -161,7 +161,7 @@ section {
 @media (min-width: 1280px) {
   /* Adjustments for large screens can go here */
   svg{
-    transform: scaleY(4) scaleX(8);
+    transform: scaleY(4) scaleX(9);
   }
 }
 
