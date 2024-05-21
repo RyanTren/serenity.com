@@ -18,6 +18,14 @@ song-details{
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(84, 10, 168, 0.37);
+}
+
+.search-button{
+    background-color: white;
+    color:black;
+}
+
+.search-button:hover{
+    background-color: #f0f0f0;
 }
 

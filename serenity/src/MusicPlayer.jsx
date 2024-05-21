@@ -32,21 +32,12 @@ function MusicPlayer() {
                     <p>Artist name</p>
                 </div>
                 <i class="material-icons">pause</i>
-                <i class="material-icons">pause_circle_filled</i>
-                <i class="material-icons">pause_circle_outline</i>
-                <i class="material-icons">fast_forward</i>
-                <i class="material-icons">fast_rewind</i>
-                <i class="material-icons">fiber_manual_record</i>
+
                 <i class="material-icons">play_arrow</i>
-                <i class="material-icons">play_circle_filled</i>
-                <i class="material-icons">play_circle_outline</i>
+
                 <i class="material-icons">skip_next</i>
                 <i class="material-icons">skip_previous</i>
-                <i class="material-icons">replay</i>
                 <i class="material-icons">repeat</i>
-                <i class="material-icons">stop</i>
-                <i class="material-icons">loop</i>
-                <i class="material-icons">mic</i>
                 <i class="material-icons">volume_up</i>
                 <i class="material-icons">volume_down</i>
                 <i class="material-icons">volume_mute</i>
