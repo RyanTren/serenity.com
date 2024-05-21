@@ -13,11 +13,14 @@ function MusicPlayer() {
     }
 
     return (
+        
         <>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
-            <div>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+
+            
                 <h1>Serenity Music Player</h1>
-                <input type="text" placeholder="Search for a song"></input>
+            <div className="search-bar">
+                <input className="search-field" type="text" placeholder="Search for a song"></input>
                 <button className="search-button">Search</button>
             </div>
 
@@ -28,20 +31,19 @@ function MusicPlayer() {
             <footer className="music-bar">
                 <div className ="song-details">
                     <img src="song-picture.png" alt="song picture goes here"></img>
-                    <h3>Song title</h3>
-                    <p>Artist name</p>
+                    <h3 alt="Song Title">Song Title</h3>
+                    <p alt="Artist Name">Artist Name</p>
                 </div>
-                <i class="material-icons">pause</i>
 
-                <i class="material-icons">play_arrow</i>
-
-                <i class="material-icons">skip_next</i>
-                <i class="material-icons">skip_previous</i>
-                <i class="material-icons">repeat</i>
-                <i class="material-icons">volume_up</i>
-                <i class="material-icons">volume_down</i>
-                <i class="material-icons">volume_mute</i>
-                <i class="material-icons">volume_off</i>
+                <button class="material-icons">pause</button>
+                <button class="material-icons">play_arrow</button>
+                <button class="material-icons">skip_next</button>
+                <button class="material-icons">skip_previous</button>
+                <button class="material-icons">repeat</button>
+                <button class="material-icons">volume_up</button>
+                <button class="material-icons">volume_down</button>
+                <button class="material-icons">volume_mute</button>
+                <button class="material-icons">volume_off</button>
             </footer>
         </>
     );
