@@ -84,11 +84,16 @@ body {
   }
 
   .links li, a{
-    z-index: 1;
+    z-index: -1;
   }
 
   .link-colors{
-    color: rgba(255, 255, 255, 0.366);
+    color: rgba(255, 255, 255, 0.514);
+  }
+
+  .link-colors:hover{
+    color: #d6dfed;
+    text-shadow: 0 0 1em#161616;
   }
   
   .footer-legal {

@@ -17,7 +17,7 @@ export function Footer() {
           y="0px"
           width="100%"
           height="100%"
-          viewBox="0 0 1600 900"
+          viewBox="0 0 1600 1000"
         >
           <defs>
             <path
@@ -33,7 +33,7 @@ export function Footer() {
                 attributeName="transform"
                 attributeType="XML"
                 type="translate"
-                dur="8s"
+                dur="7s"
                 calcMode="spline"
                 values="270 230; -334 180; 270 230"
                 keyTimes="0; .5; 1"
@@ -59,7 +59,7 @@ export function Footer() {
                 attributeName="transform"
                 attributeType="XML"
                 type="translate"
-                dur="4s"
+                dur="5s"
                 calcMode="spline"
                 values="0 230;-140 200;0 230"
                 keyTimes="0; .4; 1"
