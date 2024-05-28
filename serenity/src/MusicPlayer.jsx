@@ -25,8 +25,18 @@ function MusicPlayer() {
             </div>
 
 
+
             <p>Here you can play different songs.</p>
             {/* Add your music player content here */}
+
+            <div>
+                <audio controls>
+                    <source src="horse.ogg" type="audio/ogg"></source>
+                    <source src="horse.mp3" type="audio/mpeg"></source>
+                    Your browser does not support the audio element.
+                </audio>
+                
+            </div>
 
             <footer className="music-bar">
                 <div className ="song-details">
@@ -42,7 +52,6 @@ function MusicPlayer() {
                 <button class="material-icons">repeat</button>
                 <button class="material-icons">volume_up</button>
                 <button class="material-icons">volume_down</button>
-                <button class="material-icons">volume_mute</button>
                 <button class="material-icons">volume_off</button>
             </footer>
         </>
