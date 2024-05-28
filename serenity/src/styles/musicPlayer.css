@@ -1,4 +1,4 @@
-?
+
 
 .search-bar{
     display: flex;
@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
 
-    width: 75%;
+    width: 70%;
     height: 2%;
 
     background-color: white;
@@ -57,8 +57,12 @@
 
 .search-results{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 1.25em;
+    justify-content: center;
+    align-items: center;
+
+    grid-template-columns: repeat(4, 1fr); 
+    margin: 1em;
+    gap: 10px
 }
 
 img{

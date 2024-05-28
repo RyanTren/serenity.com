@@ -1,5 +1,5 @@
 import './styles/musicPlayer.css';
-import React, { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 
 const clientId = '8a81cc389cc649c081a108965c614247';
 const clientSecret = '088c474ee4374d7cad41b9b5a2b325fb';
