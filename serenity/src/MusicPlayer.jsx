@@ -46,6 +46,12 @@ function MusicPlayer() {
         setTracks(results);
     }
 
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+            handleSearch();
+        }
+    };
+
     return (
         <>
             <h1>Serenity Music Player</h1>
@@ -56,10 +62,12 @@ function MusicPlayer() {
                     placeholder="Search for a song"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
+                    onKeyDown={handleKeyDown}
                 ></input>
                 <button className="search-button" onClick={handleSearch}>Search</button>
             </div>
-            <p>Here you can play different songs.</p>
+            {/* <p>Here you can play different songs.</p> */}
+
             <div className="search-results">
                 {tracks.map((track) => (
                     <div key={track.id} className="track">
@@ -69,12 +77,15 @@ function MusicPlayer() {
                     </div>
                 ))}
             </div>
+
             <footer className="music-bar">
+
                 <div className="song-details">
                     <img src="song-picture.png" alt="song picture goes here"></img>
                     <h3 alt="Song Title">Song Title</h3>
                     <p alt="Artist Name">Artist Name</p>
                 </div>
+
                 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
                 <button className="material-icons">pause</button>
                 <button className="material-icons">play_arrow</button>
@@ -84,13 +95,14 @@ function MusicPlayer() {
                 <button className="material-icons">volume_up</button>
                 <button className="material-icons">volume_down</button>
                 <button className="material-icons">volume_off</button>
+
                 <div>
                     <audio controls>
                         <source src="horse.ogg" type="audio/ogg"></source>
-                        <source src="horse.mp3" type="audio/mpeg"></source>
                         Your browser does not support the audio element.
                     </audio>
                 </div>
+
             </footer>
         </>
     );
