@@ -1,5 +1,5 @@
 import './styles/musicPlayer.css';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 const clientId = '8a81cc389cc649c081a108965c614247';
 const clientSecret = '088c474ee4374d7cad41b9b5a2b325fb';
@@ -53,23 +53,35 @@ function MusicPlayer() {
         }
     };
 
-    const playTrack = (track) => {
-        setCurrentTrack(track);
-        setIsPlaying(true);
+    const playTrack = async (track) => {
         if (audioElement.current) {
             audioElement.current.src = track.preview_url;
-            audioElement.current.play();
+            try {
+                await audioElement.current.play();
+                setCurrentTrack(track);
+                setIsPlaying(true);
+            } catch (error) {
+                console.error('Error playing track:', error);
+            }
         }
     }
 
     const handlePlayPause = () => {
-        if (isPlaying) {
-            audioElement.current.pause();
-        } else {
-            audioElement.current.play();
+        if (audioElement.current) {
+            if (isPlaying) {
+                audioElement.current.pause();
+            } else {
+                audioElement.current.play();
+            }
+            setIsPlaying(!isPlaying);
         }
-        setIsPlaying(!isPlaying);
     };
+
+    useEffect(() => {
+        if (audioElement.current) {
+            audioElement.current.addEventListener('ended', () => setIsPlaying(false));
+        }
+    }, []);
 
     return (
         <>
@@ -100,7 +112,6 @@ function MusicPlayer() {
                 <div className="song-details">
                     {currentTrack && (
                         <>
-                            {/* <img src={currentTrack.album.images[0].url} alt={currentTrack.name} /> */}
                             <h3>{currentTrack.name}</h3>
                             <p>{currentTrack.artists.map(artist => artist.name).join(', ')}</p>
                         </>
@@ -112,7 +123,6 @@ function MusicPlayer() {
 
                 <div>
                     <audio ref={audioElement} controls>
-                        <source src={currentTrack ? currentTrack.preview_url : ''} type="audio/mpeg"></source>
                         Your browser does not support the audio element.
                     </audio>
                 </div>
