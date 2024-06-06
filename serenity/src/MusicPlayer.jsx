@@ -118,11 +118,11 @@ function MusicPlayer() {
                     )}
                 </div>
 
-                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
-                <button className="material-icons" onClick={handlePlayPause}>{isPlaying ? 'pause' : 'play_arrow'}</button>
 
                 <div>
-                    <audio ref={audioElement} controls>
+                    <audio className="audio-player" ref={audioElement} controls>
+                        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+                        <button className="material-icons" onClick={handlePlayPause}>{isPlaying ? 'pause' : 'play_arrow'}</button>
                         Your browser does not support the audio element.
                     </audio>
                 </div>
