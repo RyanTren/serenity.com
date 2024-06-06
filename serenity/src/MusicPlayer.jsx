@@ -1,5 +1,5 @@
 import './styles/musicPlayer.css';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 const clientId = '8a81cc389cc649c081a108965c614247';
 const clientSecret = '088c474ee4374d7cad41b9b5a2b325fb';
@@ -29,11 +29,12 @@ async function searchTracks(query, accessToken) {
     return data.tracks.items;
 }
 
-
 function MusicPlayer() {
-    // const audioElement = new Audio('audio source');
     const [tracks, setTracks] = useState([]);
     const [searchQuery, setSearchQuery] = useState('');
+    const [currentTrack, setCurrentTrack] = useState(null);
+    const [isPlaying, setIsPlaying] = useState(false);
+    const audioElement = useRef(null);
 
     const fetchAccessToken = async () => {
         const token = await getAccessToken(clientId, clientSecret);
@@ -52,6 +53,24 @@ function MusicPlayer() {
         }
     };
 
+    const playTrack = (track) => {
+        setCurrentTrack(track);
+        setIsPlaying(true);
+        if (audioElement.current) {
+            audioElement.current.src = track.preview_url;
+            audioElement.current.play();
+        }
+    }
+
+    const handlePlayPause = () => {
+        if (isPlaying) {
+            audioElement.current.pause();
+        } else {
+            audioElement.current.play();
+        }
+        setIsPlaying(!isPlaying);
+    };
+
     return (
         <>
             <h1>Serenity Music Player</h1>
@@ -66,11 +85,10 @@ function MusicPlayer() {
                 ></input>
                 <button className="search-button" onClick={handleSearch}>Search</button>
             </div>
-            {/* <p>Here you can play different songs.</p> */}
 
             <div className="search-results">
                 {tracks.map((track) => (
-                    <div key={track.id} className="track">
+                    <div key={track.id} className="track" onClick={() => playTrack(track)}>
                         <img src={track.album.images[0].url} alt={track.name} />
                         <h3>{track.name}</h3>
                         <p>{track.artists.map(artist => artist.name).join(', ')}</p>
@@ -79,30 +97,25 @@ function MusicPlayer() {
             </div>
 
             <footer className="music-bar">
-
                 <div className="song-details">
-                    <img src="song-picture.png" alt="song picture goes here"></img>
-                    <h3 alt="Song Title">Song Title</h3>
-                    <p alt="Artist Name">Artist Name</p>
+                    {currentTrack && (
+                        <>
+                            {/* <img src={currentTrack.album.images[0].url} alt={currentTrack.name} /> */}
+                            <h3>{currentTrack.name}</h3>
+                            <p>{currentTrack.artists.map(artist => artist.name).join(', ')}</p>
+                        </>
+                    )}
                 </div>
 
                 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
-                <button className="material-icons">pause</button>
-                <button className="material-icons">play_arrow</button>
-                <button className="material-icons">skip_next</button>
-                <button className="material-icons">skip_previous</button>
-                <button className="material-icons">repeat</button>
-                <button className="material-icons">volume_up</button>
-                <button className="material-icons">volume_down</button>
-                <button className="material-icons">volume_off</button>
+                <button className="material-icons" onClick={handlePlayPause}>{isPlaying ? 'pause' : 'play_arrow'}</button>
 
                 <div>
-                    <audio controls>
-                        <source src="horse.ogg" type="audio/ogg"></source>
+                    <audio ref={audioElement} controls>
+                        <source src={currentTrack ? currentTrack.preview_url : ''} type="audio/mpeg"></source>
                         Your browser does not support the audio element.
                     </audio>
                 </div>
-
             </footer>
         </>
     );
