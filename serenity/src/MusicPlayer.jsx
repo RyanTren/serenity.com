@@ -85,6 +85,8 @@ function MusicPlayer() {
 
     return (
         <>
+            <button className="back-button">Back</button>
+            
             <h1>Serenity Music Player</h1>
             <div className="search-bar">
                 <input
