@@ -6,7 +6,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding: auto;
-    background-color: rgba(0, 17, 255, 0.842);
+    /* background-color: rgba(0, 17, 255, 0.842); */
     border-radius: 8x;
     box-shadow: 0px 0px 1.5em 0px rgb(0, 0, 3);
 }
