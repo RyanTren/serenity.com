@@ -7,7 +7,7 @@ function Music(){
     return(
         <div>
             <h2>Discover Music</h2>
-            <p>Discover 300 Songs from my 3 curated playlist of wonderful vocals and instrumentals. One to party, one to feel, and one to relax. Enjoy the show.</p>
+            <p>Discover 300+ Songs from my 4 curated playlist of wonderful vocals and instrumentals. One to party, one to feel, one to relax, and a bonus... K-POP! Enjoy the show.</p>
             <section>
                 <ul>
                     <card className="card-cover">
@@ -45,6 +45,20 @@ function Music(){
                         <iframe
                                 title="Playlist 3"
                                 src={`https://open.spotify.com/embed/playlist/4rJFsPkalZKUxEJMs7CTB6?si=87b24684bd79426d`}
+                                
+                                width="100%"
+                                height="100%"
+                                style={{ minHeight: '400px' }}
+                                frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"
+                        />
+                    </card>
+
+                    <card className="card-cover">
+                        <iframe
+                                title="Playlist 4"
+                                src={`https://open.spotify.com/playlist/75kLlaoB7fvgMpBcAHXFXc?si=507a5f6f318c4837`}
                                 
                                 width="100%"
                                 height="100%"
