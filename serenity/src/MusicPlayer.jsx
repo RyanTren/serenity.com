@@ -1,6 +1,7 @@
 import './styles/musicPlayer.css';
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from "axios";
 
 const clientId = '8a81cc389cc649c081a108965c614247';
 const clientSecret = '088c474ee4374d7cad41b9b5a2b325fb';
