@@ -3,12 +3,17 @@
     top: 0;
     left: 0;
     margin: 1em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding: auto;
-    /* background-color: rgba(0, 17, 255, 0.842); */
-    border-radius: 8x;
+    padding: 15px;
+    border-radius: 8px;
+    color: #FFF;
+    background-color:rgba(118, 9, 243,);
+    border: none;
     box-shadow: 0px 0px 1.5em 0px rgb(0, 0, 3);
+}
+
+.back-button:hover{
+    background-color: rgba(118, 9, 243, 0.726);
+    cursor: pointer;
 }
 
 .search-bar{
@@ -33,6 +38,19 @@
     border: none;
     border-radius: 10px;
     padding: 10px;
+}
+
+.search-button{
+    padding: 11px;
+    border-radius: 8px;
+    color: #FFF;
+    background-color:rgba(118, 9, 243,);
+    border: none;
+}
+
+.search-button:hover{
+    background-color: rgba(118, 9, 243, 0.726);
+    cursor: pointer;
 }
 
 .music-bar{
