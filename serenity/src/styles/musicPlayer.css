@@ -112,12 +112,13 @@ img{
 }
 
 .play-pause-button {
-    font-size: 24px;
+    border-radius: 25px;
+    font-size: 20px;
     margin-right: 10px;
     cursor: pointer;
     background: none;
     border: none;
-    color: #000; /* Ensure the button is visible */
+    color: #ffffff; /* Ensure the button is visible */
 }
 
 .progress-bar-container {
@@ -128,17 +129,20 @@ img{
     overflow: hidden;
     position: relative;
     margin-right: 10px; /* Optional: add some space between progress bar and volume control */
+    width: 100%;
 }
 
 .progress-bar {
     height: 100%;
-    background-color: #2196f3;
+    width: 200%;
+    background-color: #0099ff;
     transition: width 0.1s linear;
 }
 
 .volume-control {
     display: flex;
     align-items: center;
+    color: #FFF;
 }
 
 .volume-control label {
@@ -147,7 +151,7 @@ img{
 }
 
 .volume-control input[type="range"] {
-    width: 100px;
+    width: 5vw;
 }
 
 .credits-text {

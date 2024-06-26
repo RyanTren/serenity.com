@@ -38,7 +38,7 @@ iframe{
   align-items: center;
 }
 
-button {
+.songs-button {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -58,15 +58,15 @@ button {
   transition: border-color 0.25s;
 }
 
-button:hover {
+.song-button:hover {
   border: none;
   box-shadow: inset 0px 0px 1em #3d0f82a5;
   filter: drop-shadow(0 0 1em black);
   
 }
 
-button:focus,
-button:focus-visible {
+.songs-button:focus,
+.songs-button:focus-visible {
   border: none;
   background-color: #6d23dc;
   box-shadow: inset 0px 0px 10px #010002a5;
@@ -86,11 +86,11 @@ button:focus-visible {
   }
 }
 
-button:hover::before{
+.songs-button:hover::before{
   animation: shine 2s ease-in-out infinite;
 }
 
-button::before{
+.songs-button::before{
   content: "";
   position: absolute;
   width: 100%;
