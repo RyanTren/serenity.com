@@ -1,5 +1,6 @@
 import './styles/musicPlayer.css';
 import { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const clientId = '8a81cc389cc649c081a108965c614247';
 const clientSecret = '088c474ee4374d7cad41b9b5a2b325fb';
@@ -83,9 +84,15 @@ function MusicPlayer() {
         }
     }, []);
 
+    const navigate = useNavigate();
+
+    const handleBackButtonClick = () => {
+        navigate('/'); 
+    };
+
     return (
         <>
-            <button className="back-button">Back</button>
+            <button className="back-button" onClick={handleBackButtonClick}>Back</button>
             
             <h1>Serenity Music Player</h1>
             <div className="search-bar">
