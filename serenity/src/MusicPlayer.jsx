@@ -109,6 +109,8 @@ function MusicPlayer() {
 
     return (
         <>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
             <button className="back-button" onClick={handleBackButtonClick}>Back</button>
             
             <h1>Serenity Music Player</h1>
@@ -153,7 +155,7 @@ function MusicPlayer() {
                 <div className="custom-audio-player">
                     <audio ref={audioElement}></audio>
                     <button className="play-pause-button" onClick={handlePlayPause}>
-                        {isPlaying ? '⏸' : '▶'}
+                        {isPlaying ?  <i class="material-icons">pause</i> : <i class="material-icons">play_arrow</i>}
                     </button>
                     <div className="progress-bar-container">
                         <div
@@ -162,7 +164,8 @@ function MusicPlayer() {
                         ></div>
                     </div>
                     <div className="volume-control">
-                        <label className="volume-control-text" htmlFor="volume">Volume</label>
+                        <label className="volume-control-text" htmlFor="volume">
+                            <i class="material-icons">volume_down</i></label>
                         <input
                             type="range"
                             id="volume"
