@@ -52,7 +52,7 @@ json
 ## Step 7: Deploy Your React App
 Run the following command to deploy your app to Vercel:
 
-vercel --prod
+* vercel --prod
 This command will deploy your app and set it as the production version.
 
 ## Step 8: Configure Environment Variables (Optional)
