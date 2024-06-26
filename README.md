@@ -1,5 +1,5 @@
 # serenity.com
- - website using react.js / react.ts, node.js, deployed w/ vercel
+- website using react.js / react.ts, node.js, deployed w/ vercel
 [⭐ Link ⭐](https://serenity-com.vercel.app/)
 
 
