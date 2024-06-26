@@ -35,6 +35,8 @@ function MusicPlayer() {
     const [searchQuery, setSearchQuery] = useState('');
     const [currentTrack, setCurrentTrack] = useState(null);
     const [isPlaying, setIsPlaying] = useState(false);
+    const [progress, setProgress] = useState(0);
+    const [volume, setVolume] = useState(0.25);
     const audioElement = useRef(null);
 
     const fetchAccessToken = async () => {
@@ -78,9 +80,24 @@ function MusicPlayer() {
         }
     };
 
+    const handleVolumeChange = (event) => {
+        const newVolume = event.target.value;
+        setVolume(newVolume);
+        if (audioElement.current) {
+            audioElement.current.volume = newVolume;
+        }
+    };
+
     useEffect(() => {
         if (audioElement.current) {
-            audioElement.current.addEventListener('ended', () => setIsPlaying(false));
+            audioElement.current.addEventListener('timeupdate', () => {
+                setProgress((audioElement.current.currentTime / audioElement.current.duration) * 100);
+            });
+
+            audioElement.current.addEventListener('ended', () => {
+                setIsPlaying(false);
+                setProgress(0);
+            });
         }
     }, []);
 
@@ -129,11 +146,36 @@ function MusicPlayer() {
 
 
                 <div>
-                    <audio className="audio-player" ref={audioElement} controls>
-                        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
-                        <button className="material-icons" onClick={handlePlayPause}>{isPlaying ? 'pause' : 'play_arrow'}</button>
-                        Your browser does not support the audio element.
-                    </audio>
+
+                <div className="custom-audio-player">
+                    <audio ref={audioElement}></audio>
+                    <button className="play-pause-button" onClick={handlePlayPause}>
+                        {isPlaying ? '⏸' : '▶'}
+                    </button>
+                    <div className="progress-bar-container">
+                        <div
+                            className="progress-bar"
+                            style={{ width: `${progress}%` }}
+                        ></div>
+                    </div>
+                    <div className="volume-control">
+                        <label className="volume-control-text" htmlFor="volume">Volume</label>
+                        <input
+                            type="range"
+                            id="volume"
+                            min="0"
+                            max="1"
+                            step="0.01"
+                            value={volume}
+                            onChange={handleVolumeChange}
+                        />
+                    </div>
+                </div>
+
+                    <p className="credits-text">
+                    Powered with @ Spotify API
+                    </p>
+
                 </div>
             </footer>
         </>
