@@ -58,7 +58,7 @@ function Music(){
                     <card className="card-cover">
                         <iframe
                                 title="Playlist 4"
-                                src={`https://open.spotify.com/playlist/75kLlaoB7fvgMpBcAHXFXc?si=507a5f6f318c4837`}
+                                src={`https://open.spotify.com/embed/playlist/75kLlaoB7fvgMpBcAHXFXc?si=507a5f6f318c4837`}
                                 
                                 width="100%"
                                 height="100%"
