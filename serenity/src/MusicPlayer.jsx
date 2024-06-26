@@ -134,15 +134,18 @@ function MusicPlayer() {
                 ))}
             </div>
 
-            <footer className="music-bar">
-                <div className="song-details">
-                    {currentTrack && (
-                        <>
+            <footer className="music-bar">                
+            <div className="song-details">
+                {currentTrack && (
+                    <>
+                        <img className="image" src={currentTrack.album.images[0].url} alt={currentTrack.name} />
+                        <div className="text-details">
                             <h3>{currentTrack.name}</h3>
                             <p>{currentTrack.artists.map(artist => artist.name).join(', ')}</p>
-                        </>
-                    )}
-                </div>
+                        </div>
+                    </>
+                )}
+            </div>
 
 
                 <div>
