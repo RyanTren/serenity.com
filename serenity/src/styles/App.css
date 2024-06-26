@@ -47,12 +47,18 @@ body {
 
 @keyframes flashingGlow {
   0% {
-    text-shadow: 0 0 1em #00ffdd, 0 0 2em #0019f8, 0 0 3em #9900ff; /* Start with glow */
+    text-shadow: 0 0 0.5em #00ffdd, 0 0 1em #0019f8, 0 0 1.5em #9900ff; /* Reduce the size of the glow */
   }
   100% {
-    text-shadow: 0 0 1em #0077ff; /* End with no glow */
+    text-shadow: 0 0 0.5em #0077ff; /* Simplify the end state */
   }
 }
+
+.glowingText {
+  animation: flashingGlow 2s infinite alternate;
+  will-change: text-shadow;
+}
+
 
 .tagline {
   font-size: 1.25em;
