@@ -22,7 +22,7 @@ export function Footer() {
           <defs>
             <path
               id="wave1"
-              fill="rgba(183, 0, 255, 0.5)"
+              fill="rgba(138, 76, 240, 0.4)"
               d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
           s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
             />
@@ -34,7 +34,7 @@ export function Footer() {
             />
             <path
               id="wave3"
-              fill="rgba(3, 0, 255, 0.3)"
+              fill="rgba(138, 76, 240, 0.4)"
               d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
           s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
             />
@@ -92,7 +92,7 @@ export function Footer() {
           <li><a className="fa-brands fa-linkedin" href="https://www.linkedin.com/in/ryantren/"><img src={linkedinFooter}/></a></li>
         </ul>
         <ul className="links">
-          <li><a className="link-colors" href="index.html">Home</a></li>
+          <li><a className="link-colors" href="https://serenity-com.vercel.app/">Home</a></li>
           <li><a className="link-colors" href="https://www.linkedin.com/in/ryantren/">About</a></li>
           <li><a className="link-colors" href="https://ryantren.github.io/protfolio-website/">Portfolio</a></li>
         </ul>
