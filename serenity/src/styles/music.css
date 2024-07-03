@@ -114,14 +114,34 @@ iframe{
   to { left: 61px; }
 }
 
-@media (width > 420px) {
-  section {
-    align-items: center;
-    padding-left: 0;
-    gap: 20px;
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    left: 0;
+    width: 100%;
+    transform: translateX(1em); /* Adjust this value as needed */
   }
+}
 
-  .links {
-    gap: 20px;
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    left: 0;
+    width: 100%;
+    transform: translateX(-4em); /* Adjust this value as needed */
+  }
+}
+
+@media (max-width: 430px) {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    left: 0;
+    width: 100%;
+    transform: translateX(-1em); /* Adjust this value as needed */
   }
 }
